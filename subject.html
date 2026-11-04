@@ -1,0 +1,1 @@
+<!DOCTYPE html><html lang="ko"><meta charset="utf-8"><title>과목으로 이동</title><script>const id=new URLSearchParams(location.search).get('id')||'reading';const allowed=['reading','english2','calculus2','genetics','chemistry','ethics'];location.replace('index.html#subject='+encodeURIComponent(allowed.includes(id)?id:'reading'));</script><p><a href="index.html">홈으로 이동</a></p></html>
