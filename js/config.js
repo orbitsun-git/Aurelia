@@ -4,3 +4,5 @@ window.AURELIA_CONFIG = {
   supabaseUrl: "https://yzpajs jptweyenjpmhxh.supabase.co".replace(/ /g, ""),
   supabasePublicKey: "sb_publishable_HZWY61WcmlS7L7dgF92WZw_-yA-qa9K"
 };
+
+
