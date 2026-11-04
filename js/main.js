@@ -35,5 +35,5 @@ setInterval(()=>{if(state.page==='subject')paintTheme(state.theme)},60000);
 
 document.addEventListener('click',e=>{const b=e.target.closest('[data-shop-category]');if(b){state.bookCategory=b.dataset.shopCategory;state.page='store';render();}});
 
-function applyStoreClock(){const shop=document.querySelector('.bookshop');if(!shop)return;shop.style.setProperty('--shop-bg',`url('${ASSETS.bookstore[slot()]}')`);}
+function applyStoreClock(){const shop=document.querySelector('.bookshop');if(!shop)return;const url=new URL(ASSETS.bookstore[slot()],document.baseURI).href;shop.style.backgroundImage=`linear-gradient(#fff9ef22,#36251955),url("${url}")`;shop.style.backgroundSize='cover';shop.style.backgroundPosition='center';}
 setInterval(()=>{applyStoreClock();const stamp=document.querySelector('.subjecttop>div:last-child');if(stamp&&state.page==='subject')stamp.textContent=new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit',hour12:false})+' · 현재 시간 자동 반영 · '+info();},60000);
