@@ -1,8 +1,14 @@
 {
   "sources": [
     {
-      "name": "KAIST 물리학과",
-      "url": "https://physics.kaist.ac.kr/?mid=p_news_event2&act=rss"
+      "name": "극지연구소 공식 블로그",
+      "url": "https://rss.blog.naver.com/kopriblog.xml",
+      "weekdays": [0, 2, 4]
+    },
+    {
+      "name": "The New York Times · Science",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
+      "weekdays": [1, 3, 5, 6]
     }
   ]
 }
