@@ -1,3 +1,8 @@
 {
-  "sources": []
+  "sources": [
+    {
+      "name": "KAIST 물리학과",
+      "url": "https://physics.kaist.ac.kr/?mid=p_news_event2&act=rss"
+    }
+  ]
 }
