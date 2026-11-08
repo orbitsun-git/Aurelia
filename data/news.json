@@ -1,7 +1,31 @@
 {
-  "updated_at": "2026-11-07T00:28:34.277050+00:00",
-  "scheduled_date_kst": "2026-11-07",
+  "updated_at": "2026-11-08T00:03:36.024638+00:00",
+  "scheduled_date_kst": "2026-11-08",
   "items": [
+    {
+      "title": "NASA Is Seeking Its Next Class of Astronauts",
+      "url": "https://www.nytimes.com/2026/11/07/science/nasa-recruiting-astronauts.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-07T22:04:16+00:00"
+    },
+    {
+      "title": "How Cardiologists’ High Hopes for Two Drugs Were Dashed",
+      "url": "https://www.nytimes.com/2026/11/07/science/heart-drugs-failed-novartis-novo-nordisk.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-07T14:50:04+00:00"
+    },
+    {
+      "title": "Still on the President’s Agenda: Daylight Saving Time",
+      "url": "https://www.nytimes.com/2026/11/07/science/donald-trump-daylight-saving-time.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-07T14:21:08+00:00"
+    },
+    {
+      "title": "Lonnie Thompson Has Died. He Dodged Avalanches to Preserve Climate History.",
+      "url": "https://www.nytimes.com/2026/11/06/science/lonnie-thompson-dead.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-07T14:19:29+00:00"
+    },
     {
       "title": "Biotech Firm Claims Some Credit for Groundbreaking Virus Research",
       "url": "https://www.nytimes.com/2026/11/06/science/radical-numerics-tabula-phage.html",
@@ -15,12 +39,6 @@
       "published_at": "2026-11-06T19:50:43+00:00"
     },
     {
-      "title": "Lonnie Thompson Has Died. He Dodged Avalanches to Preserve Climate History.",
-      "url": "https://www.nytimes.com/2026/11/06/science/lonnie-thompson-dead.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-06T19:17:59+00:00"
-    },
-    {
       "title": "What a Democratic Congress Could Mean for Science",
       "url": "https://www.nytimes.com/2026/11/06/science/science-democrats-congress-election.html",
       "source": "The New York Times · Science",
@@ -31,24 +49,6 @@
       "url": "https://www.nytimes.com/2026/11/06/science/ai-exponential-time-hypothesis.html",
       "source": "The New York Times · Science",
       "published_at": "2026-11-06T10:02:06+00:00"
-    },
-    {
-      "title": "Disaster-Prone Communities Face Cuts and Slowdowns in Federal Help",
-      "url": "https://www.nytimes.com/2026/11/06/climate/fema-grants-cuts-resilience.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-06T10:00:45+00:00"
-    },
-    {
-      "title": "Environmental Ballot Wins",
-      "url": "https://www.nytimes.com/2026/11/05/climate/climate-environment-ballot-meaures-midterms.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-05T21:19:39+00:00"
-    },
-    {
-      "title": "Were These Ancient Siberian Nomads the First Stoners?",
-      "url": "https://www.nytimes.com/2026/11/05/science/ancient-siberia-scythians-first-marijuanna-cannabis-use.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-05T19:07:18+00:00"
     }
   ]
 }
