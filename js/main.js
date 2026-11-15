@@ -36,3 +36,5 @@ document.addEventListener('click',e=>{const b=e.target.closest('[data-shop-categ
 
 function applyStoreClock(){const shop=document.querySelector('.bookshop');if(!shop)return;shop.style.setProperty('--shop-bg',`url("${new URL(ASSETS.bookstore[slot()],document.baseURI).href}")`);}
 setInterval(()=>{applyStoreClock();const stamp=document.querySelector('.subjecttop>div:last-child');if(stamp&&state.page==='subject')stamp.textContent=new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit',hour12:false})+' · 현재 시간 자동 반영 · '+info();},60000);
+
+

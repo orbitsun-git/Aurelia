@@ -3,3 +3,5 @@
 .brand{gap:8px;font-family:inherit;font-size:inherit}.board-pinned{margin:18px 0;background:#f7f0df;border:1px solid #e9ddc2;border-radius:12px}.board-pinned[hidden]{display:none}.pinned-notice-button{display:flex;align-items:center;gap:16px;width:100%;padding:15px 20px;text-align:left;background:transparent;border:0;color:#554a39;cursor:pointer}.pinned-label{font-size:12px;color:#8b7347;white-space:nowrap}.pinned-notice-button small{margin-left:auto;color:#8a8173;white-space:nowrap}@media(max-width:640px){.pinned-notice-button{gap:8px;padding:12px;flex-wrap:wrap}}
 
 .board-wrap{max-width:1180px}.board-banner{min-height:300px;background-position:center;margin-top:16px}.board-feed{max-width:none}.board-wrap .board-tabs{border-bottom:0;background:#f5f3ef;border-radius:26px;padding:5px;width:fit-content}.board-tabs .primary{background:#b59a68;border-color:#b59a68;color:white}.board-tabs .secondary{background:transparent;border-color:transparent}.board-write{background:#b59a68;border-color:#b59a68}.feed-card{box-shadow:none;background:#fff;border-radius:14px}@media(max-width:640px){.board-banner{min-height:220px}}
+
+

@@ -43,3 +43,5 @@ create policy likes_delete on public.aurelia_likes for delete to authenticated u
 grant select on public.aurelia_comments,public.aurelia_likes to anon,authenticated;
 grant insert,delete on public.aurelia_comments,public.aurelia_likes to authenticated;
 commit;
+
+

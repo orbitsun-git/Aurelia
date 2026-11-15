@@ -24,3 +24,5 @@ end;$$;
 revoke all on function public.aurelia_drive_attempt(text) from public,anon,authenticated;
 grant execute on function public.aurelia_drive_attempt(text) to service_role;
 commit;
+
+

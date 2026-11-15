@@ -5,7 +5,7 @@ const configs={subjects:['과목 추가','aurelia_subjects'],preview:['자료 �
 const field=(f,label,value='',type='text')=>{const x=formField(f,label,'',type,false);x.value=value??'';return x;};
 const button=(text,fn)=>{const b=node('button',text,'secondary');b.type='button';b.onclick=fn;return b;};
 const check=result=>{if(result.error)throw result.error;return result.data;};
-async function rows(table){return check(await database.from(table).select('*').order('created_at',{ascending:false}));}
+async function rows(table){if(table==='aurelia_resources'){const all=check(await database.from(table).select('*').order('created_at',{ascending:false}));const d=await window.aureliaLinkApi({action:'list'});const m=new Map(d.rows.map(x=>[x.id,x]));return all.map(x=>x.kind==='material'?(m.get(x.id)||x):x);}return check(await database.from(table).select('*').order('created_at',{ascending:false}));}
 async function cleanup(paths){if(paths.length){const r=await database.storage.from('aurelia-files').remove(paths);if(r.error)alert('파일 정리 실패: '+r.error.message);}}
 async function selector(f,existing={}){const course=field(f,'과정 (내신 또는 수능)',existing.course||'내신'),grade=field(f,'학년',existing.grade||'2학년'),semester=field(f,'학기',existing.semester||'2학기');const label=node('label','과목'),sel=node('select');label.append(sel);f.append(label);let custom=[];try{custom=await rows('aurelia_subjects');}catch(e){f.append(node('small','추가 과목 조회 실패: '+e.message));}
 function refresh(){sel.replaceChildren();const cs=course.value==='수능';const names=cs?['국어','영어','수학','통합과학','통합사회']:['독서와작문','영어2','미적분2','생물의유전','화학','현대사회와윤리'];const ids=cs?['csat-korean','csat-english','csat-math','csat-science','csat-social']:SUBJECT_IDS;const list=names.map((name,i)=>({name,subject_id:ids[i]}));list.push(...custom.filter(x=>x.course===course.value&&(cs||(x.grade===grade.value&&x.semester===semester.value))));for(const x of list){const o=node('option',x.name);o.value=x.subject_id;sel.append(o);}if(list.some(x=>x.subject_id===existing.subject_id))sel.value=existing.subject_id;}
@@ -23,6 +23,7 @@ if(key==='preview'){const files=Array.from(upload.files);if(imageURLs.length+fil
 if(key==='links'){values.kind='material';values.preview_title=values.title;}
 if(key==='notices'){values.category='공지사항';if(!item.id){const {data}=await database.auth.getUser();values.user_id=data.user.id;}}
 if(key==='books'&&!item.id)values.stage=1;
+if(key==='links'){await window.aureliaLinkApi({action:'save',id:item.id,scope:getScope(),title:values.title,description:values.description,url:values.url,preview_image:values.preview_image});saved=true;alert('저장했습니다. 과목 암호가 없으면 아래 암호 관리에서 설정하세요.');await drawAdmin(generation);return;}
 const operation=item.id?database.from(table).update(values).eq('id',item.id):database.from(table).insert(values);check(await operation);saved=true;alert('저장했습니다.');await drawAdmin(generation);
 }catch(err){if(!saved)await cleanup(uploaded);alert(err.message);}finally{save.disabled=false;}};
 }
@@ -31,3 +32,5 @@ try{let items=await rows(table);if(key==='preview'||key==='links')items=items.fi
 function rename(){for(const el of document.querySelectorAll('h2,h3,button')){if(el.children.length)continue;if(el.textContent.trim()==='강의자료')el.textContent='자료 미리보기';}}
 const observer=new MutationObserver(rename);observer.observe(document.getElementById('app'),{childList:true,subtree:true});rename();
 })();
+
+
