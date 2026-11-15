@@ -1,7 +1,7 @@
 'use strict';
 (()=>{
 const previous=drawAdmin;let tab='subjects';
-const configs={subjects:['과목 추가','aurelia_subjects'],preview:['자료 미리보기','aurelia_resources'],links:['학습 링크','aurelia_resources'],books:['문제집','aurelia_books'],posts:['게시글 관리','aurelia_posts'],notices:['공지 관리','aurelia_posts']};
+const configs={subjects:['과목 추가','aurelia_subjects'],links:['학습 링크','aurelia_resources'],books:['문제집','aurelia_books'],posts:['게시글 관리','aurelia_posts'],notices:['공지 관리','aurelia_posts']};
 const field=(f,label,value='',type='text')=>{const x=formField(f,label,'',type,false);x.value=value??'';return x;};
 const button=(text,fn)=>{const b=node('button',text,'secondary');b.type='button';b.onclick=fn;return b;};
 const check=result=>{if(result.error)throw result.error;return result.data;};
@@ -16,6 +16,7 @@ if(key==='subjects'){for(const [k,l,v]of [['name','과목명',''],['course','과
 else{inputs.title=field(f,'제목',item.title);inputs.title.required=true;if(['posts','notices'].includes(key)){inputs.content=field(f,'내용',item.content,'textarea');inputs.content.required=true;}else{inputs.description=field(f,'설명',item.description,'textarea');}}
 if(key==='preview'){const imageList=node('div');f.append(imageList);function paint(){imageList.replaceChildren();imageURLs.forEach((url,i)=>{const row=node('div',undefined,'admin-image-row'),img=node('img');img.src=url;img.alt='이미지 '+(i+1);row.append(img,node('span',String(i+1)),button('↑',()=>{if(i){[imageURLs[i-1],imageURLs[i]]=[imageURLs[i],imageURLs[i-1]];paint();}}),button('↓',()=>{if(i<imageURLs.length-1){[imageURLs[i+1],imageURLs[i]]=[imageURLs[i],imageURLs[i+1]];paint();}}),button('제거',()=>{imageURLs.splice(i,1);paint();}));imageList.append(row);});}paint();upload=field(f,'추가 이미지 (PNG/JPG/WebP, 각 50MB 이하)','','file');upload.multiple=true;upload.accept='image/png,image/jpeg,image/webp';}
 if(key==='links'){inputs.url=field(f,'학습 페이지 HTTPS 링크',item.url,'url');inputs.url.required=true;inputs.preview_image=field(f,'대표 이미지 HTTPS 주소 (선택)',item.preview_image,'url');}
+if(key==='links'){inputs.pin=field(f,item.id?'새 암호 (숫자 4자리 · 비우면 기존 암호 유지)':'자료 암호 (숫자 4자리)','','password');inputs.pin.inputMode='numeric';inputs.pin.maxLength=4;inputs.pin.pattern='[0-9]{4}';inputs.pin.required=!item.id;}
 if(key==='books'){for(const [k,l]of [['category','과목 분류'],['publisher','출판사'],['edition','학년·판본'],['difficulty','난이도'],['difficulty_reason','난이도 설명'],['recommended_for','추천 대상'],['contents','목차'],['cover_url','표지 HTTPS 주소'],['purchase_url','구매 HTTPS 링크']])inputs[k]=field(f,l,item[k],['contents','difficulty_reason','recommended_for'].includes(k)?'textarea':'text');}
 const save=node('button',item.id?'수정 저장':'등록','primary');save.type='submit';f.append(save,button('취소',()=>container.replaceChildren()));f.onsubmit=async e=>{e.preventDefault();save.disabled=true;const uploaded=[];let saved=false;try{if(!await userAdmin())throw Error('관리자만 가능합니다.');let values={...getScope()};for(const [k,x]of Object.entries(inputs))values[k]=x.value.trim();for(const k of ['url','preview_image','cover_url','purchase_url'])if(values[k]&&!https(values[k]))throw Error('HTTPS 주소만 사용할 수 있습니다.');
 if(key==='subjects'){if(!values.name||!['내신','수능'].includes(values.course))throw Error('과목명과 과정을 확인하세요.');values.subject_id='custom-'+crypto.randomUUID();if(values.course==='수능')values.grade=values.semester='공통';}
@@ -23,7 +24,7 @@ if(key==='preview'){const files=Array.from(upload.files);if(imageURLs.length+fil
 if(key==='links'){values.kind='material';values.preview_title=values.title;}
 if(key==='notices'){values.category='공지사항';if(!item.id){const {data}=await database.auth.getUser();values.user_id=data.user.id;}}
 if(key==='books'&&!item.id)values.stage=1;
-if(key==='links'){await window.aureliaLinkApi({action:'save',id:item.id,scope:getScope(),title:values.title,description:values.description,url:values.url,preview_image:values.preview_image});saved=true;alert('저장했습니다. 과목 암호가 없으면 아래 암호 관리에서 설정하세요.');await drawAdmin(generation);return;}
+if(key==='links'){await window.aureliaLinkApi({action:'save',id:item.id,scope:getScope(),title:values.title,description:values.description,url:values.url,preview_image:values.preview_image,pin:values.pin});saved=true;alert('학습자료와 암호를 저장했습니다.');await drawAdmin(generation);return;}
 const operation=item.id?database.from(table).update(values).eq('id',item.id):database.from(table).insert(values);check(await operation);saved=true;alert('저장했습니다.');await drawAdmin(generation);
 }catch(err){if(!saved)await cleanup(uploaded);alert(err.message);}finally{save.disabled=false;}};
 }
