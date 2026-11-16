@@ -9,3 +9,5 @@ alter table public.aurelia_books add column if not exists recommended_for text;
 alter table public.aurelia_books alter column stage set default 1;
 
 
+
+

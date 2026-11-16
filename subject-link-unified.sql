@@ -28,3 +28,5 @@ end;$$;
 revoke all on function public.aurelia_save_material(uuid,text,text,text,text,text,text,text,text,text,text) from public,anon,authenticated;
 grant execute on function public.aurelia_save_material(uuid,text,text,text,text,text,text,text,text,text,text) to service_role;
 commit;
+
+

@@ -38,3 +38,5 @@ function applyStoreClock(){const shop=document.querySelector('.bookshop');if(!sh
 setInterval(()=>{applyStoreClock();const stamp=document.querySelector('.subjecttop>div:last-child');if(stamp&&state.page==='subject')stamp.textContent=new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit',hour12:false})+' · 현재 시간 자동 반영 · '+info();},60000);
 
 
+
+

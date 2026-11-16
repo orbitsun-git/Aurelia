@@ -58,3 +58,5 @@ aurelia_drive_pending 중 오래된 완료되지 않은 행, aurelia_drive_attem
 
 ## 검증 범위
 로컬 JS 문법/패키지 참조/암호 해시 및 제한 함수 설계 검사만 완료. 실제 Google OAuth, Drive 업로드 CORS, Supabase RLS, Vercel API의 통합 테스트는 사용자 계정 연결 전이므로 미완료입니다.
+
+

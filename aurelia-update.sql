@@ -45,3 +45,5 @@ grant insert,delete on public.aurelia_comments,public.aurelia_likes to authentic
 commit;
 
 
+
+

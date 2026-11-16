@@ -48,3 +48,5 @@ drop policy if exists "aurelia_file_delete" on storage.objects;
 create policy "aurelia_file_delete" on storage.objects for delete to authenticated using(bucket_id='aurelia-files' and (select auth.jwt())->'app_metadata'->>'role'='admin');
 
 
+
+

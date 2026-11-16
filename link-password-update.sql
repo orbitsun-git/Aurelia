@@ -51,3 +51,5 @@ drop trigger if exists aurelia_capture_material_url on public.aurelia_resources;
 create trigger aurelia_capture_material_url before insert or update of url,kind on public.aurelia_resources for each row execute function public.aurelia_capture_material_url();
 revoke all on function public.aurelia_capture_material_url() from public,anon,authenticated;
 commit;
+
+
