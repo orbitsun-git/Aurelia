@@ -1,54 +1,54 @@
 {
-  "updated_at": "2026-11-16T21:37:17.661935+00:00",
-  "scheduled_date_kst": "2026-11-17",
+  "updated_at": "2026-11-17T21:38:47.474426+00:00",
+  "scheduled_date_kst": "2026-11-18",
   "items": [
     {
-      "title": "Highlights From the Starship Landing",
-      "url": "https://www.nytimes.com/live/2026/11/14/science/spacex-starship-launch",
+      "title": "How the Measles Virus Makes Your Immune System Forget",
+      "url": "https://www.nytimes.com/2026/11/17/science/measles-virus-immune-system.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-16T19:18:08+00:00"
+      "published_at": "2026-11-17T19:22:44+00:00"
+    },
+    {
+      "title": "A New, Bold Antarctic Rescue: Bringing Shackleton’s Outpost Back to Life",
+      "url": "https://www.nytimes.com/2026/11/17/science/ernest-shackleton-antarctic-south-georgia-villa.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-17T19:21:15+00:00"
+    },
+    {
+      "title": "A.I.’s People-Pleasing Problem",
+      "url": "https://www.nytimes.com/2026/11/17/climate/climate-chatbots-people-pleasers.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-17T19:16:41+00:00"
+    },
+    {
+      "title": "What Can Genes Reveal About Chronic Pain?",
+      "url": "https://www.nytimes.com/2026/11/17/science/genes-chronic-pain.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-17T18:53:19+00:00"
     },
     {
       "title": "John H. Powers III to Lead NIAID Amid Turmoil",
       "url": "https://www.nytimes.com/2026/11/16/science/niaid-chief-john-powers.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-16T19:17:40+00:00"
+      "published_at": "2026-11-17T16:54:30+00:00"
     },
     {
-      "title": "Permitting Bill Would Charge Data Centers Billions for Power",
-      "url": "https://www.nytimes.com/2026/11/16/climate/permitting-bill-data-centers-electricity-rates.html",
+      "title": "Fearing Chinese Rivals, U.S. Biotech Adopts a New Norm: Share Nothing",
+      "url": "https://www.nytimes.com/2026/11/17/science/fearing-chinese-rivals-us-biotech-adopts-a-new-norm-share-nothing.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-16T17:00:36+00:00"
+      "published_at": "2026-11-17T11:57:52+00:00"
     },
     {
-      "title": "This Cancer Kills Children in a Year. Research Has Been Stalled for a Year.",
-      "url": "https://www.nytimes.com/2026/11/15/well/brain-cancer-children-dipg.html",
+      "title": "There’s a New Push at COP31 in Turkey: Electrification",
+      "url": "https://www.nytimes.com/2026/11/17/climate/cop31-turkey-electrification.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-16T15:03:46+00:00"
+      "published_at": "2026-11-17T10:03:56+00:00"
     },
     {
-      "title": "How to Watch the 2026 Leonids Meteor Shower",
-      "url": "https://www.nytimes.com/2026/11/16/science/leonids-meteor-shower-peak.html",
+      "title": "A More Precise Clock Is on Its Way",
+      "url": "https://www.nytimes.com/2026/11/17/fashion/optical-atomic-clocks-rolex.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-16T05:01:05+00:00"
-    },
-    {
-      "title": "F.D.A. Rejects Closely Watched Lung Cancer Drug From China",
-      "url": "https://www.nytimes.com/2026/11/15/business/fda-lung-cancer-drug-china.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-15T20:33:07+00:00"
-    },
-    {
-      "title": "‘Birdbrain’ Is a Misnomer. Crows Make Decisions Faster Than We Can",
-      "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-15T10:00:36+00:00"
-    },
-    {
-      "title": "SpaceX Makes History With Successful Rocket Catch in Texas",
-      "url": "https://www.nytimes.com/2026/11/14/science/spacex-starship-first-catch.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-15T00:36:33+00:00"
+      "published_at": "2026-11-17T10:00:32+00:00"
     }
   ]
 }
