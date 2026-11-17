@@ -3,11 +3,11 @@ function escapeHTML(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&am
 // Aurelia 확장: 기존 자료/뉴스/테마/서점 유지
 let catalog=[],visibleSubjects=[],boardCategory='QnA';
 const BASE_NAMES=['독서와작문','영어2','미적분2','생물의유전','화학','현대사회와윤리'];
-const CSAT_NAMES=['국어','영어','수학','통합과학','통합사회'];
-const CSAT_IDS=['csat-korean','csat-english','csat-math','csat-science','csat-social'];
+const CSAT_NAMES=['국어','수학','영어','통합사회','통합과학','한국사'];
+const CSAT_IDS=['csat-korean','csat-math','csat-english','csat-social','csat-science','csat-history'];
 async function loadCatalog(){if(!database)return;try{const {data,error}=await database.from('aurelia_subjects').select('*').order('created_at');if(error)throw error;catalog=data||[];}catch(e){console.warn('과목 추가 SQL 적용 여부:',e.message);}}
-subjectId=function(){return visibleSubjects[state.subject]?.subject_id||SUBJECT_IDS[0];};
-filters=function(){const cs=state.course==='수능',g=document.getElementById('grade'),s=document.getElementById('semester');g.hidden=s.hidden=cs;visibleSubjects=(cs?CSAT_NAMES:BASE_NAMES).map((name,i)=>({name,subject_id:(cs?CSAT_IDS:SUBJECT_IDS)[i]})).concat(catalog.filter(x=>x.course===state.course&&(cs||(x.grade===g.value&&x.semester===s.value))));subjects=visibleSubjects.map(x=>x.name);if(state.subject>=subjects.length)state.subject=0;document.querySelectorAll('[data-course]').forEach(b=>b.classList.toggle('sel',b.dataset.course===state.course));const bar=document.getElementById('subjects');bar.replaceChildren();visibleSubjects.forEach((x,i)=>{const b=node('button',x.name,state.page==='subject'&&state.subject===i?'sel':'');b.dataset.subject=i;bar.append(b);});document.getElementById('filters').hidden=!['home','subject','store'].includes(state.page);};
+subjectId=function(){return visibleSubjects[state.subject]?.subject_id||'__no_subject__';};
+filters=function(){const cs=state.course==='수능',g=document.getElementById('grade'),s=document.getElementById('semester');g.hidden=s.hidden=cs;visibleSubjects=catalog.filter(x=>x.course===state.course&&(cs||(x.grade===g.value&&x.semester===s.value)));subjects=visibleSubjects.map(x=>x.name);if(state.subject>=subjects.length)state.subject=0;document.querySelectorAll('[data-course]').forEach(b=>b.classList.toggle('sel',b.dataset.course===state.course));const bar=document.getElementById('subjects');bar.replaceChildren();visibleSubjects.forEach((x,i)=>{const b=node('button',x.name,state.page==='subject'&&state.subject===i?'sel':'');b.dataset.subject=i;bar.append(b);});document.getElementById('filters').hidden=!['home','subject','store'].includes(state.page);};
 const oldEnhance=enhancePage;
 enhancePage=async function(){const page=state.page;if(page==='community'){++generation;await drawBoard();return;}await oldEnhance();if(state.page!==page)return;if(page==='home')await drawClock();};
 const REGIONS={서울:[37.57,126.98],부산:[35.18,129.08],대구:[35.87,128.60],인천:[37.46,126.71],광주:[35.16,126.85],대전:[36.35,127.38],울산:[35.54,129.31],세종:[36.48,127.29],수원:[37.26,127.03],춘천:[37.88,127.73],강릉:[37.75,128.88],청주:[36.64,127.49],전주:[35.82,127.15],목포:[34.81,126.39],포항:[36.02,129.34],창원:[35.23,128.68],제주:[33.50,126.53]};
