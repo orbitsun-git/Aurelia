@@ -15,4 +15,6 @@ paintTheme=function(key){if(!THEME_LABELS[key])key='city';state.theme=key;const 
 const observer=new MutationObserver(()=>{if(!document.querySelector('.subjectmode')){cleanup();last='';}});observer.observe(document.body,{childList:true,subtree:true});timer=setInterval(()=>{if(state.page==='subject')paintTheme(state.theme);},30000);window.addEventListener('pagehide',()=>{clearInterval(timer);cleanup();observer.disconnect();},{once:true});
 })();
 
-(()=>{const link=document.createElement('a');link.href='backgrounds.html';link.textContent='🍀 배경 보기';link.setAttribute('aria-label','로그인 없이 배경 보기');link.style.cssText='position:fixed;right:max(12px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:99;background:#f8faf2;color:#243b30;padding:9px 14px;border-radius:999px;font:600 14px system-ui;text-decoration:none;box-shadow:0 2px 12px #0003';document.body.append(link);})();
+(()=>{const nav=document.getElementById('subjects');if(!nav)return;
+function addGallery(){const existing=nav.querySelector('#clover-gallery');if(state.course==='수능'||state.page==='store'){existing?.remove();return;}if(existing)return;const button=document.createElement('button');button.type='button';button.id='clover-gallery';button.textContent='🍀 배경 보기';button.addEventListener('click',()=>location.assign('backgrounds.html'));nav.append(button);}
+const observer=new MutationObserver(addGallery);observer.observe(nav,{childList:true});addGallery();})();
