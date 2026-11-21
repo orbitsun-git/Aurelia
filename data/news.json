@@ -1,54 +1,54 @@
 {
-  "updated_at": "2026-11-20T21:34:30.127211+00:00",
-  "scheduled_date_kst": "2026-11-21",
+  "updated_at": "2026-11-21T21:26:48.833501+00:00",
+  "scheduled_date_kst": "2026-11-22",
   "items": [
+    {
+      "title": "Anthropic Mathematician Claims to Solve Riemann Hypothesis With Help From Claude",
+      "url": "https://www.nytimes.com/2026/11/20/science/anthropic-ai-math-riemann-hypothesis.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-21T16:52:42+00:00"
+    },
     {
       "title": "Chinese-Born Neuroscientist Is Detained by ICE While Traveling From Conference",
       "url": "https://www.nytimes.com/2026/11/20/science/chinese-scientist-detained-ice-princeton-eva-yi-xie-.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-20T21:11:26+00:00"
+      "published_at": "2026-11-21T12:53:05+00:00"
+    },
+    {
+      "title": "Turkey’s Van Cats Contend With Rising Temperatures",
+      "url": "https://www.nytimes.com/2026/11/20/climate/van-cats-turkey.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-21T12:31:35+00:00"
+    },
+    {
+      "title": "A New Era of A.I.-Driven Chaos? That Might Just Be Progress.",
+      "url": "https://www.nytimes.com/2026/11/21/science/outages-tech-history.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-21T10:02:10+00:00"
+    },
+    {
+      "title": "Marsha Linehan Has Died. She Transformed Treatment for Personality Disorder.",
+      "url": "https://www.nytimes.com/2026/11/19/well/mind/marsha-linehan-dead.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-21T01:28:24+00:00"
+    },
+    {
+      "title": "The Race to Build a Quantum Computer Has Become a Sprint",
+      "url": "https://www.nytimes.com/2026/11/20/science/quantum-computer-neutral-atoms.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-20T21:46:06+00:00"
+    },
+    {
+      "title": "H.I.V. Research Networks May Again Seek Federal Funding, With a Twist",
+      "url": "https://www.nytimes.com/2026/11/20/science/hiv-research-funding-nih.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-20T21:41:42+00:00"
     },
     {
       "title": "After 49 Years, Voyager 1 Is a Mind-Blowing One Light-Day From Earth",
       "url": "https://www.nytimes.com/2026/11/18/science/nasa-voyager-1-earth-light-day.html",
       "source": "The New York Times · Science",
       "published_at": "2026-11-20T20:45:05+00:00"
-    },
-    {
-      "title": "How Much Do You Know About NASA’s Voyager Mission?",
-      "url": "https://www.nytimes.com/quiz/2026/11/18/science/voyager-lightday.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-20T20:45:05+00:00"
-    },
-    {
-      "title": "Turkey’s Van Cats Contend With Rising Temperatures",
-      "url": "https://www.nytimes.com/2026/11/20/climate/van-cats-turkey.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-20T17:13:20+00:00"
-    },
-    {
-      "title": "A.I. Has Changed How We Talk. Here Are the Words You Need to Know.",
-      "url": "https://www.nytimes.com/2026/11/18/science/ai-artificial-intelligence-terminology-glossary.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-20T16:23:02+00:00"
-    },
-    {
-      "title": "The Race to Build a Quantum Computer Has Become a Sprint",
-      "url": "https://www.nytimes.com/2026/11/20/science/quantum-computer-neutral-atoms.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-20T15:51:47+00:00"
-    },
-    {
-      "title": "Inside COP31: Part Trade Show, Part Climate Therapy Session",
-      "url": "https://www.nytimes.com/2026/11/19/climate/cop31-turkey-event-scene.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-20T15:20:14+00:00"
-    },
-    {
-      "title": "U.S. Auctions 31.5 Million Acres of Pacific Ocean to Deep Sea Mining Company",
-      "url": "https://www.nytimes.com/2026/11/19/climate/metals-company-seafloor-mining-auction.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-20T14:16:51+00:00"
     }
   ]
 }
