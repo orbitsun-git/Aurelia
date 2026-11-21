@@ -6,6 +6,20 @@ for(const key of Object.keys(THEME_LABELS))delete THEME_LABELS[key];
 catalog.sort((a,b)=>a.label.localeCompare(b.label,'ko')).forEach(x=>THEME_LABELS[x.key]=x.label);
 window.aureliaRenderClover=function(target){const gallery=document.createElement('section');gallery.className='subjectmode';gallery.style.cssText='position:relative;isolation:isolate;min-height:70svh;overflow:hidden';gallery.innerHTML=`<div aria-hidden="true" style="position:absolute;inset:0;z-index:-2;background-position:center;background-repeat:no-repeat"></div><div class="wash"></div><div class="subjecttop" style="color:white;text-shadow:0 2px 8px #000,0 1px 4px #000"><div class="eyebrow" style="color:inherit">A LITTLE SPACE FOR YOUR MIND</div><h1>🍀 배경 보기</h1><p>로그인 없이 Aurelia의 풍경을 둘러보세요.</p></div><div class="subjectcontent"><section class="glass" style="padding:18px;display:flex;gap:12px;flex-wrap:wrap;align-items:center"><label>테마 <select aria-label="테마"></select></label><label>시간대 <select aria-label="시간대"><option value="0">새벽</option><option value="1">낮</option><option value="2">노을</option><option value="3">밤</option></select></label><button type="button" class="pill" data-page="home">← 돌아가기</button><span role="status"></span></section></div>`;
 const [theme,period]=gallery.querySelectorAll('select'), bg=gallery.firstElementChild,msg=gallery.querySelector('[role=status]');for(const x of catalog)theme.add(new Option(x.label,x.key));theme.value='scene100';period.value=String(timeIndex());let request=0;function show(){const seq=++request,url='assets/themes100-preview/'+theme.value+'-'+period.value+'.webp',im=new Image();msg.textContent='';im.onload=()=>{if(seq!==request)return;const photo='url("'+url+'")';bg.style.backgroundImage=photo+',linear-gradient(#20202d66,#20202d66),'+photo;bg.style.backgroundSize='contain,cover,cover';};im.onerror=()=>{if(seq===request)msg.textContent='이 배경을 불러오지 못했어요.';};im.src=url;}theme.onchange=period.onchange=show;target.replaceChildren(gallery);show();};
+// update.js replaces the original filters; decorate the actual renderer.
+const renderSubjectFilters=filters;
+filters=function(...args){
+  const result=renderSubjectFilters.apply(this,args);
+  const nav=document.getElementById('subjects');
+  if(nav&&state.course!=='수능'&&['home','subject','clover'].includes(state.page)){
+    let button=nav.querySelector('button[data-page="clover"]');
+    if(!button){button=document.createElement('button');button.type='button';button.dataset.page='clover';button.textContent='🍀 배경 보기';}
+    button.classList.toggle('sel',state.page==='clover');nav.append(button);
+    if(state.page==='clover')document.getElementById('filters').hidden=false;
+  }
+  return result;
+};
+filters();
 const media=matchMedia('(prefers-reduced-motion: reduce)');let timer=null,last='',lastHost=null,cleanup=()=>{};
 const timeIndex=()=>{const h=new Date().getHours();return h>=5&&h<9?0:h>=9&&h<17?1:h>=17&&h<20?2:3;};
 const choice=timeIndex;
