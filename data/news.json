@@ -1,7 +1,31 @@
 {
-  "updated_at": "2026-11-21T21:26:48.833501+00:00",
-  "scheduled_date_kst": "2026-11-22",
+  "updated_at": "2026-11-22T21:29:48.565664+00:00",
+  "scheduled_date_kst": "2026-11-23",
   "items": [
+    {
+      "title": "Donald Hooton Sr., Who Crusaded Against Steroids in Sports, Has Died",
+      "url": "https://www.nytimes.com/2026/11/22/us/donald-hooton-sr-dead.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-22T19:10:04+00:00"
+    },
+    {
+      "title": "COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels",
+      "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-22T18:20:39+00:00"
+    },
+    {
+      "title": "Looking for the Formula to Stop an Apocalypse",
+      "url": "https://www.nytimes.com/2026/11/22/magazine/looking-for-the-formula-to-stop-an-apocalypse.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-22T12:27:46+00:00"
+    },
+    {
+      "title": "International Mission Arrives at Mercury to Study Its Mysteries",
+      "url": "https://www.nytimes.com/2026/11/20/science/mercury-bepi-colombo-orbit.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-22T01:26:28+00:00"
+    },
     {
       "title": "Anthropic Mathematician Claims to Solve Riemann Hypothesis With Help From Claude",
       "url": "https://www.nytimes.com/2026/11/20/science/anthropic-ai-math-riemann-hypothesis.html",
@@ -25,30 +49,6 @@
       "url": "https://www.nytimes.com/2026/11/21/science/outages-tech-history.html",
       "source": "The New York Times · Science",
       "published_at": "2026-11-21T10:02:10+00:00"
-    },
-    {
-      "title": "Marsha Linehan Has Died. She Transformed Treatment for Personality Disorder.",
-      "url": "https://www.nytimes.com/2026/11/19/well/mind/marsha-linehan-dead.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-21T01:28:24+00:00"
-    },
-    {
-      "title": "The Race to Build a Quantum Computer Has Become a Sprint",
-      "url": "https://www.nytimes.com/2026/11/20/science/quantum-computer-neutral-atoms.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-20T21:46:06+00:00"
-    },
-    {
-      "title": "H.I.V. Research Networks May Again Seek Federal Funding, With a Twist",
-      "url": "https://www.nytimes.com/2026/11/20/science/hiv-research-funding-nih.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-20T21:41:42+00:00"
-    },
-    {
-      "title": "After 49 Years, Voyager 1 Is a Mind-Blowing One Light-Day From Earth",
-      "url": "https://www.nytimes.com/2026/11/18/science/nasa-voyager-1-earth-light-day.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-20T20:45:05+00:00"
     }
   ]
 }
