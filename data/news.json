@@ -1,54 +1,54 @@
 {
-  "updated_at": "2026-11-22T21:29:48.565664+00:00",
-  "scheduled_date_kst": "2026-11-23",
+  "updated_at": "2026-11-23T21:38:01.572946+00:00",
+  "scheduled_date_kst": "2026-11-24",
   "items": [
     {
-      "title": "Donald Hooton Sr., Who Crusaded Against Steroids in Sports, Has Died",
-      "url": "https://www.nytimes.com/2026/11/22/us/donald-hooton-sr-dead.html",
+      "title": "Meet NASA’s first and only female launch director",
+      "url": "https://www.nytimes.com/2026/11/23/science/space/women-charlie-blackwell-thompson-nasa.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-22T19:10:04+00:00"
+      "published_at": "2026-11-23T21:19:11+00:00"
+    },
+    {
+      "title": "The Race to Build a Quantum Computer Has Become a Sprint",
+      "url": "https://www.nytimes.com/2026/11/20/science/quantum-computer-neutral-atoms.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-23T19:55:42+00:00"
     },
     {
       "title": "COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels",
       "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-22T18:20:39+00:00"
-    },
-    {
-      "title": "Looking for the Formula to Stop an Apocalypse",
-      "url": "https://www.nytimes.com/2026/11/22/magazine/looking-for-the-formula-to-stop-an-apocalypse.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-22T12:27:46+00:00"
+      "published_at": "2026-11-23T19:27:13+00:00"
     },
     {
       "title": "International Mission Arrives at Mercury to Study Its Mysteries",
       "url": "https://www.nytimes.com/2026/11/20/science/mercury-bepi-colombo-orbit.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-22T01:26:28+00:00"
+      "published_at": "2026-11-23T18:29:03+00:00"
     },
     {
-      "title": "Anthropic Mathematician Claims to Solve Riemann Hypothesis With Help From Claude",
-      "url": "https://www.nytimes.com/2026/11/20/science/anthropic-ai-math-riemann-hypothesis.html",
+      "title": "COP31 Climate Talks Broke Down. Now What?",
+      "url": "https://www.nytimes.com/2026/11/23/climate/cop31-collapse-what-next.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-21T16:52:42+00:00"
+      "published_at": "2026-11-23T16:18:49+00:00"
     },
     {
-      "title": "Chinese-Born Neuroscientist Is Detained by ICE While Traveling From Conference",
-      "url": "https://www.nytimes.com/2026/11/20/science/chinese-scientist-detained-ice-princeton-eva-yi-xie-.html",
+      "title": "H.I.V. Research Networks May Again Seek Federal Funding, With a Twist",
+      "url": "https://www.nytimes.com/2026/11/20/science/hiv-research-funding-nih.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-21T12:53:05+00:00"
+      "published_at": "2026-11-23T15:36:19+00:00"
     },
     {
-      "title": "Turkey’s Van Cats Contend With Rising Temperatures",
-      "url": "https://www.nytimes.com/2026/11/20/climate/van-cats-turkey.html",
+      "title": "When It Comes to Nature vs. Nurture, How Much Do Our Genes Matter?",
+      "url": "https://www.nytimes.com/2026/11/23/science/missing-heritability.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-21T12:31:35+00:00"
+      "published_at": "2026-11-23T12:10:25+00:00"
     },
     {
-      "title": "A New Era of A.I.-Driven Chaos? That Might Just Be Progress.",
-      "url": "https://www.nytimes.com/2026/11/21/science/outages-tech-history.html",
+      "title": "Donald Hooton Sr., Who Crusaded Against Steroids in Sports, Has Died",
+      "url": "https://www.nytimes.com/2026/11/22/us/donald-hooton-sr-dead.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-21T10:02:10+00:00"
+      "published_at": "2026-11-22T19:10:04+00:00"
     }
   ]
 }
