@@ -1,12 +1,36 @@
 {
-  "updated_at": "2026-11-23T21:38:01.572946+00:00",
-  "scheduled_date_kst": "2026-11-24",
+  "updated_at": "2026-11-24T21:42:50.326818+00:00",
+  "scheduled_date_kst": "2026-11-25",
   "items": [
+    {
+      "title": "Iowa’s Toxic Explosion",
+      "url": "https://www.nytimes.com/2026/11/24/climate/iowas-toxic-explosion.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-24T20:11:35+00:00"
+    },
+    {
+      "title": "This Danish Man Was a Rare Witness to the Agricultural Revolution",
+      "url": "https://www.nytimes.com/2026/11/24/science/rodhals-man-neolithic-farming-witness.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-24T17:31:15+00:00"
+    },
+    {
+      "title": "Ancient Egyptian Cats Lived Squalid Lives Before Mummification",
+      "url": "https://www.nytimes.com/2026/11/24/science/ancient-egyptian-cats-mummies.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-24T10:01:52+00:00"
+    },
+    {
+      "title": "What Personality Can Tell Us About Mental Health",
+      "url": "https://www.nytimes.com/2026/11/24/science/personality-mental-health.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-24T08:00:12+00:00"
+    },
     {
       "title": "Meet NASA’s first and only female launch director",
       "url": "https://www.nytimes.com/2026/11/23/science/space/women-charlie-blackwell-thompson-nasa.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-23T21:19:11+00:00"
+      "published_at": "2026-11-23T21:19:12+00:00"
     },
     {
       "title": "The Race to Build a Quantum Computer Has Become a Sprint",
@@ -25,30 +49,6 @@
       "url": "https://www.nytimes.com/2026/11/20/science/mercury-bepi-colombo-orbit.html",
       "source": "The New York Times · Science",
       "published_at": "2026-11-23T18:29:03+00:00"
-    },
-    {
-      "title": "COP31 Climate Talks Broke Down. Now What?",
-      "url": "https://www.nytimes.com/2026/11/23/climate/cop31-collapse-what-next.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-23T16:18:49+00:00"
-    },
-    {
-      "title": "H.I.V. Research Networks May Again Seek Federal Funding, With a Twist",
-      "url": "https://www.nytimes.com/2026/11/20/science/hiv-research-funding-nih.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-23T15:36:19+00:00"
-    },
-    {
-      "title": "When It Comes to Nature vs. Nurture, How Much Do Our Genes Matter?",
-      "url": "https://www.nytimes.com/2026/11/23/science/missing-heritability.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-23T12:10:25+00:00"
-    },
-    {
-      "title": "Donald Hooton Sr., Who Crusaded Against Steroids in Sports, Has Died",
-      "url": "https://www.nytimes.com/2026/11/22/us/donald-hooton-sr-dead.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-22T19:10:04+00:00"
     }
   ]
 }
