@@ -1,7 +1,19 @@
 {
-  "updated_at": "2026-11-24T21:42:50.326818+00:00",
-  "scheduled_date_kst": "2026-11-25",
+  "updated_at": "2026-11-25T21:45:03.372681+00:00",
+  "scheduled_date_kst": "2026-11-26",
   "items": [
+    {
+      "title": "Europe’s Hera Mission Releases Close-Up Images of the Asteroid Hit by a NASA Spacecraft",
+      "url": "https://www.nytimes.com/2026/11/25/science/hera-nasa-photos-dart-asteroid.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-25T17:30:06+00:00"
+    },
+    {
+      "title": "Bizarre Material May Herald the Future of Computer Chips",
+      "url": "https://www.nytimes.com/2026/11/25/science/chips-wires-copper-niobium.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-25T16:00:05+00:00"
+    },
     {
       "title": "Iowa’s Toxic Explosion",
       "url": "https://www.nytimes.com/2026/11/24/climate/iowas-toxic-explosion.html",
@@ -37,18 +49,6 @@
       "url": "https://www.nytimes.com/2026/11/20/science/quantum-computer-neutral-atoms.html",
       "source": "The New York Times · Science",
       "published_at": "2026-11-23T19:55:42+00:00"
-    },
-    {
-      "title": "COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels",
-      "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-23T19:27:13+00:00"
-    },
-    {
-      "title": "International Mission Arrives at Mercury to Study Its Mysteries",
-      "url": "https://www.nytimes.com/2026/11/20/science/mercury-bepi-colombo-orbit.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-23T18:29:03+00:00"
     }
   ]
 }
