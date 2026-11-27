@@ -1,7 +1,13 @@
 {
-  "updated_at": "2026-11-26T21:40:12.910454+00:00",
-  "scheduled_date_kst": "2026-11-27",
+  "updated_at": "2026-11-27T21:43:46.055070+00:00",
+  "scheduled_date_kst": "2026-11-28",
   "items": [
+    {
+      "title": "Homo Erectus Lived in Rainforests, Upending Ideas About Their Adaptability",
+      "url": "https://www.nytimes.com/2026/11/27/science/homo-erectus-early-humans-china-rainforests.html",
+      "source": "The New York Times · Science",
+      "published_at": "2026-11-27T13:21:47+00:00"
+    },
     {
       "title": "The N.F.L. Player Who Left Football for Math",
       "url": "https://www.nytimes.com/2026/11/26/science/john-urschel-ai-nfl-math.html",
@@ -18,13 +24,13 @@
       "title": "How Birds With GPS and Audio Sensors Track Hidden Fishing Boats",
       "url": "https://www.nytimes.com/2026/11/26/climate/seabirds-tracking-hidden-fishing-boats.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-26T10:04:04+00:00"
+      "published_at": "2026-11-26T10:04:05+00:00"
     },
     {
       "title": "Europe’s Hera Mission Releases Close-Up Images of the Asteroid Hit by a NASA Spacecraft",
       "url": "https://www.nytimes.com/2026/11/25/science/hera-nasa-photos-dart-asteroid.html",
       "source": "The New York Times · Science",
-      "published_at": "2026-11-25T17:30:06+00:00"
+      "published_at": "2026-11-25T17:30:07+00:00"
     },
     {
       "title": "Bizarre Material May Herald the Future of Computer Chips",
@@ -43,12 +49,6 @@
       "url": "https://www.nytimes.com/2026/11/24/science/rodhals-man-neolithic-farming-witness.html",
       "source": "The New York Times · Science",
       "published_at": "2026-11-24T17:31:15+00:00"
-    },
-    {
-      "title": "Ancient Egyptian Cats Lived Squalid Lives Before Mummification",
-      "url": "https://www.nytimes.com/2026/11/24/science/ancient-egyptian-cats-mummies.html",
-      "source": "The New York Times · Science",
-      "published_at": "2026-11-24T10:01:52+00:00"
     }
   ]
 }
